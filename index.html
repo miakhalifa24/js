@@ -2,38 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1 id="texto">Meu nome é: </h1>
+    <h1>Sons MIDI</h1>
+    
+    <section class="teclado">
+        <button class="tecla tecla_pom">Pom</button>
+        <button class="tecla tecla_clap">Clap</button>
+        <button class="tecla tecla_tim">Tim</button>
 
-    <button onclick="mudaCor()">Mudar Cor</button>
-    <button onclick="aumentaFonte()">Aumentar fonte</button>
-    <button onclick="diminuiFonte()">Diminuir fonte</button>
+        <button class="tecla tecla_puff">Puff</button>
+        <button class="tecla tecla_splash">Splash</button>
+        <button class="tecla tecla_toim">Toim</button>
 
-    <script>
-        function MudaCor(){
-            var elementoTexto = document.getElementById("texto");
-            elementoTexto.style.color = "black";
-        }
+        <button class="tecla tecla_psh">Psh</button>
+        <button class="tecla tecla_tic">Tic</button>
+        <button class="tecla tecla_tom">Tom</button>
+    </section>
 
-        var tamanhoFonte =  16;
-
-        function aumentaFonte(){
-        var elementoTexto = document.getElementById(texto);
-        tamanhoFomte += 2;
-        elementoTexto.style.fontSize = tamanhoFonte + "px";
-        }
-
-        function diminuiFonte(){
-        var elementoTexto = document.getElementById(texto);
-        tamanhoFomte += 2;
-        elementoTexto.style.fontSize = tamanhoFonte + "px";
-        }
-
-</script>
-
+    <audio src="sounds/keyq.way" id="som_tecla_pom"></audio>
+    <audio src="sounds/keyw.way" id="som_tecla_clap"></audio>
+    <audio src="sounds/keye.way" id="som_tecla_tim"></audio>
+    <audio src="sounds/keya.way" id="som_tecla_puff"></audio>
+    <audio src="sounds/keys.way" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.way" id="som_tecla_toim"></audio>
+    <audio src="sounds/keyz.way" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.way" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.way" id="som_tecla_tom"></audio>
+    
+    <script src="main.js"></script>
 
 </body>
 </html>
